@@ -33,3 +33,6 @@ The Connection class encapsulates the connection to the server and has only one 
 The Game class initializes the connection and the board and it enables/disables the board, depending on whether it's the  current user's turn to move or not. The Game class uses event listeners to interact with the board, and it display the status message (if it's the user's turn to move or not, if the game is over, the game result, etc).
 
 The Board class is the core of the game. It accepts an HTML Table element as the only parameter of its constructor and binds the game board to the table cells. When user clicks on the cell, a board:set event is dispatched, with the row and cell number. If the move was winning, a board:winning event is dispatched, and if the last cell is filled and it's not a winning move – a board:full event is dispatched.
+
+
+node server.js
